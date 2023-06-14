@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Software-defined Radio - Tyler Moss</title>
+		<link rel="stylesheet" href="../output.css" />
+		<link rel="stylesheet" href="fonts.css" />
+		<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJj9XpWUvv7pVI+Bp4CJOn4u+lfJ4w4SvIbGg2XI1TGf9XB" crossorigin="anonymous" />
+		<meta charset="utf-8" />
+		<script src="https://kit.fontawesome.com/06dbaf145a.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body class="font-Inter">
+		<!-- ONE COLUMN -->
+		<div class="mx-auto max-w-screen-xl px-5 sm:px-24">
+			<div class="grid grid-cols-1 pt-24 pb-5">
+				<!-- HEADER -->
+				<div>
+					<!-- BACK BUTTON -->
+					<div class="flex flex-row mb-7">
+						<a href="../index.html">
+							<img class="w-6" src="../assets/arrow.png" alt="back arrow" draggable="false" />
+						</a>
+					</div>
+
+					<div>
+						<!-- BANNER -->
+						<img class="mb-7 rounded-lg" draggable="false" src="../assets/projects/rds-radio/rds-banner.png" alt="Software-defined Radio Banner" />
+						<!-- PROJECT NAME AND DATE -->
+						<div class="flex flex-col md:flex-row justify-between md:items-end pl-2 pb-1">
+							<h2 class="text-3xl font-Inter font-bold text-left">Software-defined Radio</h2>
+							<p class="text-lg font-Inter font-normal sm:text-base lg:text-lg">March 2022 to April 2022</p>
+						</div>
+
+						<!-- SKILLS ROW -->
+						<div class="flex flex-row flex-wrap pt-2 pb-2">
+							<!-- REAL-TIME IMPLEMENTATION CAPSULE -->
+							<div class="flex items-center rounded-full bg-transparent border border-solid border-gray-300 p-2 mr-1 mb-1 h-9">
+								<i class="fas fa-stopwatch text-yellow-400 ml-1 mr-2"></i>
+								<span class="font-Inter font-medium text-gray-800 mr-1 text-sm">Real-time Implementation</span>
+							</div>
+							<!-- DIGITAL SIGNAL PROCESSING CAPSULE -->
+							<div class="flex items-center rounded-full bg-transparent border border-solid border-gray-300 p-2 mr-1 mb-1 h-9">
+								<i class="fas fa-wave-square text-green-500 ml-1 mr-2"></i>
+								<span class="font-Inter font-medium text-gray-800 mr-1 text-sm">Digital Signal Processing</span>
+							</div>
+							<!-- RDS SUPPORT CAPSULE -->
+							<div class="flex items-center rounded-full bg-transparent border border-solid border-gray-300 p-2 mr-1 mb-1 h-9">
+								<i class="fas fa-info-circle text-blue-500 ml-1 mr-2"></i>
+								<span class="font-Inter font-medium text-gray-800 mr-1 text-sm">RDS Support</span>
+							</div>
+							<!-- C++ CAPSULE -->
+							<div class="flex items-center rounded-full bg-transparent border border-solid border-gray-300 p-2 mr-1 mb-1 h-9">
+								<i class="fas fa-code text-purple-500 ml-1 mr-2"></i>
+								<span class="font-Inter font-medium text-gray-800 mr-1 text-sm">C++</span>
+							</div>
+							<!-- PYTHON CAPSULE -->
+							<div class="flex items-center rounded-full bg-transparent border border-solid border-gray-300 p-2 mr-1 mb-1 h-9">
+								<i class="fab fa-python text-red-500 ml-1 mr-2"></i>
+								<span class="font-Inter font-medium text-gray-800 mr-1 text-sm">Python</span>
+							</div>
+							<!-- PROJECT MANAGEMENT CAPSULE -->
+							<div class="flex items-center rounded-full bg-transparent border border-solid border-gray-300 p-2 mr-1 mb-1 h-9">
+								<i class="fas fa-tasks text-red-500 ml-1 mr-2"></i>
+								<span class="font-Inter font-medium text-gray-800 mr-1 text-sm">Project Management</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- CONTENT -->
+				<div class="mt-4">
+					<div class="flex flex-col mb-8">
+						<div class="w-full">
+							<h3 class="text-2xl font-Inter font-semibold">Overview & Scope</h3>
+							<!-- divider line -->
+							<div class="w-12 h-1 bg-gray-800 mt-2 mb-2"></div>
+							<p class="text-lg font-Inter font-normal text-gray-800 pt-2">
+								A real-time implementation of a software-defined radio which includes support for both mono and stereo FM channels, as well as RDS (radio data system). Written in C++ and Python, the project processes the radio signals received through RF hardware using digital signal processing techniques, resulting in a fully useable radio! <br /><br />The main objective of this project was to build a real-time implementation of a computing system while following industry-level specfications.
+								This project is part of the "Computer Systems Integration Project" (COMPENG 3DY4) course taught by Dr. Nicola Nicolici at McMaster University.
+							</p>
+						</div>
+					</div>
+
+					<div class="flex flex-col mb-8">
+						<div class="w-full">
+							<h3 class="text-2xl font-Inter font-semibold">General Technical Breakdown</h3>
+							<!-- divider line -->
+							<div class="w-12 h-1 bg-gray-800 mt-2 mb-2"></div>
+							<p class="text-lg font-Inter font-normal text-gray-800 pt-2">For the sake of brevity, the project can be divided into three main parts.</p>
+
+							<h4 class="text-xl font-Inter font-semibold mt-4">1. RF Front-End and Mono Audio Processing</h4>
+							<p class="text-lg font-Inter font-normal text-gray-800 pt-2">In this first part, the signal undergoes several stages of transformation. It is:</p>
+							<div class="pl-10">
+								<ul class="list-disc text-gray-800">
+									<li>Filtered</li>
+									<li>Amplified</li>
+									<li>Down-converted to the intermediate sample rate</li>
+								</ul>
+							</div>
+							<p class="text-lg font-Inter font-normal text-gray-800 pt-2">The resulting mono audio data is then further processed:</p>
+							<div class="pl-10">
+								<ul class="list-disc text-gray-800">
+									<li>Upsampled</li>
+									<li>Filtered</li>
+									<li>Decimated to the audio sample rate</li>
+								</ul>
+							</div>
+
+							<h4 class="text-xl font-Inter font-semibold mt-4">2. Stereo Audio Processing</h4>
+							<p class="text-lg font-Inter font-normal text-gray-800 pt-2">The second part involves the extraction of stereo pilot tone and stereo data from the RF front-end. This is achieved using band-pass filters. The stereo pilot tone is then used in two key processes:</p>
+							<div class="pl-10">
+								<ul class="list-disc text-gray-800">
+									<li>Recovering the stereo carrier</li>
+									<li>Mixing it with the stereo data to shift it to the center frequency</li>
+								</ul>
+							</div>
+							<p class="text-lg font-Inter font-normal text-gray-800 pt-2">The mono path's low-pass filter and decimation/resampling are reused on the resulting data, which is subsequently passed to the stereo recombiner. The outcome of this is the generation of the left and right audio channels.</p>
+
+							<h4 class="text-xl font-Inter font-semibold mt-4">3. RDS Decoding and Application Layer</h4>
+							<p class="text-lg font-Inter font-normal text-gray-800 pt-2">Finally, the third part, or RDS Decoding and Application Layer, involves the extraction of the RDS data. This is accomplished through:</p>
+							<div class="pl-10">
+								<ul class="list-disc text-gray-800">
+									<li>Band-pass filtering</li>
+									<li>Squared non-linearity</li>
+									<li>Resampling</li>
+								</ul>
+							</div>
+							<p class="text-lg font-Inter font-normal text-gray-800 pt-2">After the Manchester decoding and differential decoding processes, parity check and syndrome comparison are used to confirm frame synchronization. This step also allows for the extraction of the program information code, type, and service name for user display.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<footer>
+		<!-- COPYRIGHT FOOTER -->
+		<div class="flex flex-col items-center justify-center w-full h-32">
+			<p class="text-sm font-Inter text-gray-500">© 2023 Tyler Moss</p>
+		</div>
+	</footer>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Spot: A Discord Bot - Tyler Moss</title>
+		<link rel="stylesheet" href="../output.css" />
+		<link rel="stylesheet" href="fonts.css" />
+		<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+		<meta charset="utf-8" />
+		<script src="https://kit.fontawesome.com/06dbaf145a.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body class="font-Inter">
+		<!-- ONE COLUMN -->
+		<div class="mx-auto max-w-screen-xl px-5 sm:px-24">
+			<div class="grid grid-cols-1 pt-24 pb-5">
+				<!-- HEADER -->
+				<div>
+					<!-- BACK BUTTON -->
+					<div class="flex flex-row mb-7">
+						<a href="../index.html">
+							<img class="w-6" src="../assets/arrow.png" alt="back arrow" draggable="false" />
+						</a>
+						<!-- <p class="text-lg font-Inter font-medium text-gray-800 ml-2">Back</p> -->
+					</div>
+
+					<div>
+						<!-- BANNER -->
+						<img class="mb-7 rounded-lg" draggable="false" src="../assets/projects/pet-boe-bot/boe-banner.png" alt="boe-banner" />
+						<!-- PROJECT NAME AND DATE -->
+						<div class="flex flex-col md:flex-row justify-between md:items-end pl-2 pb-1">
+							<h2 class="text-3xl font-Inter font-bold text-left">Pet Boe Bot</h2>
+							<p class="text-lg font-Inter font-normal sm:text-base lg:text-lg">Created in 2019</p>
+						</div>
+
+						<!-- SKILLS ROW -->
+						<div class="flex flex-row flex-wrap pt-2 pb-2">
+							<!-- ARDUINO CAPSULE -->
+							<div class="flex items-center rounded-full bg-transparent border border-solid border-gray-300 p-2 mr-1 mb-1 h-9">
+								<i class="fas fa-microchip text-blue-600 ml-1 mr-2"></i>
+								<span class="font-Inter font-medium text-gray-800 mr-1 text-sm">Arduino</span>
+							</div>
+							<!-- EMBEDDED SYSTEMS CAPSULE -->
+							<div class="flex items-center rounded-full bg-transparent border border-solid border-gray-300 p-2 mr-1 mb-1 h-9">
+								<i class="fas fa-cogs text-green-600 ml-1 mr-2"></i>
+								<span class="font-Inter font-medium text-gray-800 mr-1 text-sm">Embedded Systems</span>
+							</div>
+							<!-- ELECTRONIC CIRCUITS CAPSULE -->
+							<div class="flex items-center rounded-full bg-transparent border border-solid border-gray-300 p-2 mr-1 mb-1 h-9">
+								<i class="fas fa-sitemap text-red-600 ml-1 mr-2"></i>
+								<span class="font-Inter font-medium text-gray-800 mr-1 text-sm">Electronic Circuits</span>
+							</div>
+							<!-- USER EXPERIENCE CAPSULE -->
+							<div class="flex items-center rounded-full bg-transparent border border-solid border-gray-300 p-2 mr-1 mb-1 h-9">
+								<i class="fas fa-users-cog text-purple-500 ml-1 mr-2"></i>
+								<span class="font-Inter font-medium text-gray-800 mr-1 text-sm">User Experience</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- CONTENT -->
+				<div class="mt-4">
+					<!-- Text content with an image on the right, text wraps around image -->
+					<div class="flex flex-col">
+						<div class="w-full">
+							<h3 class="text-2xl font-Inter font-semibold">Overview & Scope</h3>
+							<!-- divider line -->
+							<div class="w-12 h-1 bg-gray-800 mt-2 mb-4"></div>
+							<div class="float-right w-2/5 ml-12 mb-4">
+								<img class="rounded-lg" draggable="false" src="../assets/projects/pet-boe-bot/transparent-full.png" alt="pet-boe-bot transparent" />
+							</div>
+							<p class="text-lg font-Inter font-normal text-gray-800 pt-2">Pet Boe Bot is an interactive "pet" robot that was built in approximately 3 weeks. The goal of this project was to converge all of my computer engineering knowledge at the time into a single project — Arduino microcontrollers, a variety of sensors, as well as software development.</p>
+							<h3 class="text-xl font-semibold font-Inter text-gray-800 pt-6">Parts list:</h3>
+							<ul class="text-lg font-Inter font-normal text-gray-800 pb-2 list-disc list-inside">
+								<li>1x Boe-Bot Robot Kit</li>
+								<li>1x Arduino Mega</li>
+								<li>1x Piezo buzzer</li>
+								<li>1x Nokia 5100 LCD</li>
+								<li>2x LEDs</li>
+								<li>2x Photoresistors</li>
+								<li>2x IR LEDs</li>
+								<li>2x IR Receivers</li>
+								<li>1x Soft potentiometer</li>
+								<li>A whole bunch of wires</li>
+								<li>Many 10kΩ, 1kΩ, and 220Ω resistors</li>
+							</ul>
+							<p class="text-base font-Inter text-gray-600 pt-2 pb-2">Note: Unfortunately the specific models of each sensor are not available due to the system no longer being in my hands.</p>
+						</div>
+					</div>
+
+					<div class="mt-6">
+						<h3 class="text-2xl font-Inter font-semibold">Hardware</h3>
+						<div class="w-12 h-1 bg-gray-800 mt-2 mb-4"></div>
+					</div>
+
+					<div class="container mx-auto mt-6 font-Inter">
+						<div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+							<!-- Column 1 -->
+							<div class="bg-gray-200 rounded-lg shadow-md p-4 flex flex-row">
+								<img src="../assets/projects/pet-boe-bot/face.png" draggable="false" alt="Face" class="w-full h-48 object-scale-down mb-4 md:mb-0 mr-4 md:w-48 rounded-lg" />
+								<div>
+									<h3 class="text-2xl font-medium text-gray-800">Face</h3>
+									<p class="text-md lg:text-sm text-gray-700">The face will show your pet’s <strong>emotions</strong> during it’s different states (casual, playtime, and sleeptime). Use this to know how your pet is feeling!</p>
+								</div>
+							</div>
+							<div class="bg-gray-200 rounded-lg shadow-md p-4 flex flex-row">
+								<img src="../assets/projects/pet-boe-bot/heart.png" draggable="false" alt="Heart" class="w-full h-48 object-scale-down mb-4 md:mb-0 mr-4 md:w-48 rounded-lg" />
+								<div>
+									<h3 class="text-2xl font-medium text-gray-800">Heart</h3>
+									<p class="text-md lg:text-sm text-gray-700">The heart of your pet is located just to the left of its face. Keep an eye on this to ensure that your pet is <strong>alive</strong> and well!</p>
+								</div>
+							</div>
+							<div class="bg-gray-200 rounded-lg shadow-md p-4 flex flex-row">
+								<img src="../assets/projects/pet-boe-bot/mouth.png" draggable="false" alt="Mouth" class="w-full h-48 object-scale-down mb-4 md:mb-0 mr-4 md:w-48 rounded-lg" />
+								<div>
+									<h3 class="text-2xl font-medium text-gray-800">Mouth</h3>
+									<p class="text-md lg:text-sm text-gray-700">The mouth allows your pet to <strong>speak</strong> to you! Pay close attention to what your pet is saying so you know when it's waking up, going to sleep, or wanting to play.</p>
+								</div>
+							</div>
+
+							<!-- Column 2 -->
+							<div class="bg-gray-200 rounded-lg shadow-md p-4 flex flex-row">
+								<img src="../assets/projects/pet-boe-bot/eyes.png" draggable="false" alt="Eyes" class="w-full h-48 object-scale-down mb-4 md:mb-0 mr-4 md:w-48 rounded-lg" />
+								<div>
+									<h3 class="text-2xl font-medium text-gray-800">Eyes</h3>
+									<p class="text-md lg:text-sm text-gray-700">The eyes of your pet will help them locate a nice dark spot for them to <strong>sleep</strong> in so that they aren't bombarded with bright lights!</p>
+								</div>
+							</div>
+							<div class="bg-gray-200 rounded-lg shadow-md p-4 flex flex-row">
+								<img src="../assets/projects/pet-boe-bot/hands.png" draggable="false" alt="Hands" class="w-full h-48 object-scale-down mb-4 md:mb-0 mr-4 md:w-48 rounded-lg" />
+								<div>
+									<h3 class="text-2xl font-medium text-gray-800">Hands</h3>
+									<p class="text-md lg:text-sm text-gray-700">The hands ensure that your pet <strong>doesn't bump</strong> into anything in front of them. Sometimes they'll still run into things though because they're distracted. Silly robots.</p>
+								</div>
+							</div>
+							<div class="bg-gray-200 rounded-lg shadow-md p-4 flex flex-row">
+								<img src="../assets/projects/pet-boe-bot/head.png" draggable="false" alt="Head" class="w-full h-48 object-scale-down mb-4 md:mb-0 mr-4 md:w-48 rounded-lg" />
+								<div>
+									<h3 class="text-2xl font-medium text-gray-800">Head</h3>
+									<p class="text-md lg:text-sm text-gray-700">The head of your bot is where you give all those head pats. Try <strong>petting</strong> here during playtime or when they are sleeping, as they may not pay attention to you when they are exploring their surroundings.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="mt-12">
+						<h3 class="text-2xl font-Inter font-semibold">Software</h3>
+						<div class="w-12 h-1 bg-gray-800 mt-2"></div>
+					</div>
+
+					<div class="container mx-auto mt-6 font-Inter">
+						<div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+							<div class="bg-blue-300 rounded-lg shadow-md p-4 flex">
+								<div class="self-start">
+									<h3 class="text-3xl font-medium text-gray-800 mb-2">Roam</h3>
+									<p class="text-sm text-gray-700">Your new pet robot can <strong>roam and explore it's surroundings</strong>! While roaming, the bot uses the IR sensors to ensure it doesn't bump into anything. After roaming for a bit, your bot will enter playtime mode.</p>
+								</div>
+							</div>
+							<div class="bg-pink-300 rounded-lg shadow-md p-4 flex">
+								<div class="self-start">
+									<h3 class="text-3xl font-medium text-gray-800 mb-2">Play</h3>
+									<p class="text-sm text-gray-700">While in playtime mode, your bot will do a little side to side dance. If you give your bot a little head scratch by petting the soft potentiometer on it's head, <strong>your bot will sing a little jingle and do a little happy dance</strong>!</p>
+								</div>
+							</div>
+							<div class="bg-purple-300 rounded-lg shadow-md p-4 flex">
+								<div class="self-start">
+									<h3 class="text-3xl font-medium text-gray-800 mb-2">Sleep</h3>
+									<p class="text-sm text-gray-700">After all that dancing, <strong>your bot will need some rest</strong>. Using the photoresistor "eyes", your bot will locate a nice dark spot nearby to take a little nap. After napping, your bot will wake up and will start exploring again!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<footer>
+		<!-- COPYRIGHT FOOTER -->
+		<div class="flex flex-col items-center justify-center w-full h-32">
+			<p class="text-sm font-Inter text-gray-500">© 2023 Tyler Moss</p>
+		</div>
+	</footer>
+</html>

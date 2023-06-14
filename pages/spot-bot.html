@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Spot: A Discord Bot - Tyler Moss</title>
+		<link rel="stylesheet" href="../output.css" />
+		<link rel="stylesheet" href="fonts.css" />
+		<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+		<meta charset="utf-8" />
+		<script src="https://kit.fontawesome.com/06dbaf145a.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body class="font-Inter">
+		<!-- ONE COLUMN -->
+		<div class="mx-auto max-w-screen-xl px-5 sm:px-24">
+			<div class="grid grid-cols-1 pt-24 pb-5">
+				<!-- HEADER -->
+				<div>
+					<!-- BACK BUTTON -->
+					<div class="flex flex-row mb-7">
+						<a href="../index.html">
+							<img class="w-6" src="../assets/arrow.png" alt="back arrow" draggable="false" />
+						</a>
+					</div>
+
+					<div>
+						<!-- BANNER -->
+						<img class="mb-7 rounded-lg" draggable="false" src="../assets/projects/spot/spot-banner.png" alt="spot banner" />
+						<!-- PROJECT NAME AND DATE -->
+						<div class="flex flex-col md:flex-row justify-between md:items-end pl-2 pb-1">
+							<h2 class="text-3xl font-Inter font-bold text-left">Spot: A Python Discord Bot</h2>
+							<p class="text-lg font-Inter font-normal sm:text-base lg:text-lg">January 2022 to April 2022</p>
+						</div>
+
+						<!-- SKILLS ROW -->
+						<div class="flex flex-row flex-wrap pt-2 pb-2">
+							<!-- PYTHON CAPSULE -->
+							<div class="flex items-center rounded-full bg-transparent border border-solid border-gray-300 p-2 mr-1 mb-1 h-9">
+								<i class="fab fa-python text-yellow-400 ml-1 mr-2"></i>
+								<span class="font-Inter font-medium text-gray-800 mr-1 text-sm">Python</span>
+							</div>
+							<!-- USER EXPERIENCE CAPSULE -->
+							<div class="flex items-center rounded-full bg-transparent border border-solid border-gray-300 p-2 mr-1 mb-1 h-9">
+								<i class="fas fa-users-cog text-purple-500 ml-1 mr-2"></i>
+								<span class="font-Inter font-medium text-gray-800 mr-1 text-sm">User Experience</span>
+							</div>
+							<!-- DISCORD API CAPSULE -->
+							<div class="flex items-center rounded-full bg-transparent border border-solid border-gray-300 p-2 mr-1 mb-1 h-9">
+								<i class="fab fa-discord text-blue-500 ml-1 mr-2"></i>
+								<span class="font-Inter font-medium text-gray-800 mr-1 text-sm">Discord API</span>
+							</div>
+							<!-- DATABASES CAPSULE -->
+							<div class="flex items-center rounded-full bg-transparent border border-solid border-gray-300 p-2 mr-1 mb-1 h-9">
+								<i class="fas fa-database text-orange-500 ml-1 mr-2"></i>
+								<span class="font-Inter font-medium text-gray-800 mr-1 text-sm">Databases</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- CONTENT -->
+				<div class="mt-4">
+					<div class="flex flex-col md:flex-row md:items-start">
+						<div class="w-full md:w-3/5">
+							<h3 class="text-2xl font-Inter font-semibold">Overview & Scope</h3>
+							<!-- divider line -->
+							<div class="w-12 h-1 bg-gray-800 mt-2 mb-4"></div>
+							<p class="text-lg font-Inter font-normal text-gray-800 pt-2">Spot is a Discord bot that was made for a private server of 60+ users. It was made using Python with the help of the discord.py library. The bot has an interactive, user-friendly interface which explains how to use it's many features.</p>
+							<ul class="text-lg font-Inter font- normal text-gray-800 pt-2 pb-2 list-disc list-inside">
+								<li>The project is approximately 1500 lines of code.</li>
+								<li>You can create polls with up to 9 different options, and votes update in real-time as users vote.</li>
+								<li>Poll results will show in real-time as users vote.</li>
+								<li>The bot will announce birthdays at midnight, every night (if any).</li>
+							</ul>
+						</div>
+						<div class="w-full ml-0 md:mt-0 md:ml-12 md:w-2/5">
+							<img class="rounded-lg" draggable="false" src="../assets/projects/spot/help.png" alt="spot help commands" />
+							<figcaption class="mt-1 text-sm text-gray-400">The 's, help' command, which returns all available commands.</figcaption>
+						</div>
+					</div>
+
+					<div class="container mt-8 mb-8 font-Inter">
+						<div class="bg-gray-100 rounded-lg shadow-md p-6">
+							<div class="text-center">
+								<p class="text-xl font-medium text-gray-800">Design custom polls, showcase unique profiles, and celebrate birthdays with your community.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="flex flex-col mt-2">
+						<!-- GRID -->
+						<div class="grid md:grid-cols-2 gap-6 w-full">
+							<!-- LEFT COLUMN -->
+							<div class="col-span-1 grid grid-rows-2 md:grid-rows-1 gap-7">
+								<div>
+									<img class="rounded-lg" draggable="false" src="../assets/projects/spot/custom-polls.png" alt="custom polls" />
+								</div>
+								<div>
+									<img class="rounded-lg" draggable="false" src="../assets/projects/spot/bday-notifs.png" alt="bday notifs" />
+								</div>
+							</div>
+							<!-- RIGHT COLUMN -->
+							<div class="col-span-1">
+								<img class="rounded-lg" draggable="false" src="../assets/projects/spot/profiles.png" alt="profiles" />
+							</div>
+						</div>
+					</div>
+
+					<div class="container mx-auto mt-12">
+						<div class="text-center flex justify-center sm:text-left mb-2 sm:mb-4">
+							<p class="text-sm sm:text-base text-gray-700">Click a topic to see relevant commands</p>
+						</div>
+						<div id="commands-container" class="rounded-lg">
+							<div id="tab-buttons" class="flex flex-wrap justify-center space-y-2 sm:space-y-0 sm:space-x-4 mb-4">
+								<button id="server" class="w-full sm:w-auto px-2 sm:px-4 py-1 sm:py-2 text-sm sm:text-base text-white bg-green-500 rounded inline-flex items-center space-x-1 sm:space-x-2 hover:bg-green-600 transition duration-200">
+									<i class="fas fa-server"></i>
+									<span>Server</span>
+								</button>
+								<button id="moderation" class="w-full sm:w-auto px-2 sm:px-4 py-1 sm:py-2 text-sm sm:text-base text-white bg-yellow-500 rounded inline-flex items-center space-x-1 sm:space-x-2 hover:bg-yellow-600 transition duration-200">
+									<i class="fas fa-gavel"></i>
+									<span>Moderation</span>
+								</button>
+								<button id="profiles" class="w-full sm:w-auto px-2 sm:px-4 py-1 sm:py-2 text-sm sm:text-base text-white bg-blue-500 rounded inline-flex items-center space-x-1 sm:space-x-2 hover:bg-blue-600 transition duration-200">
+									<i class="fas fa-id-card"></i>
+									<span>Profiles</span>
+								</button>
+								<button id="quotes" class="w-full sm:w-auto px-2 sm:px-4 py-1 sm:py-2 text-sm sm:text-base text-white bg-purple-500 rounded inline-flex items-center space-x-1 sm:space-x-2 hover:bg-purple-600 transition duration-200">
+									<i class="fas fa-quote-right"></i>
+									<span>Quotes</span>
+								</button>
+								<button id="actions" class="w-full sm:w-auto px-2 sm:px-4 py-1 sm:py-2 text-sm sm:text-base text-white bg-red-500 rounded inline-flex items-center space-x-1 sm:space-x-2 hover:bg-red-600 transition duration-200">
+									<i class="fas fa-hand-pointer"></i>
+									<span>Actions</span>
+								</button>
+								<button id="misc" class="w-full sm:w-auto px-2 sm:px-4 py-1 sm:py-2 text-sm sm:text-base text-white bg-indigo-500 rounded inline-flex items-center space-x-1 sm:space-x-2 hover:bg-indigo-600 transition duration-200">
+									<i class="fas fa-ellipsis-h"></i>
+									<span>Misc</span>
+								</button>
+							</div>
+							<div id="content-container" class="p-4 bg-gray-100 rounded min-h-[190px]">
+								<div id="content-server">
+									<h3 class="font-bold mb-2">Server Commands:</h3>
+									<ul class="list-disc list-inside">
+										<li><strong>info:</strong> get detailed info about the server.</li>
+										<li><strong>setlogs:</strong> set the logs channel.</li>
+										<li><strong>jail:</strong> view users who are currently banned from the server.</li>
+										<li><strong>boosters:</strong> view members who are currently boosting the server.</li>
+										<li><strong>ping:</strong> view the current latency of the bot.</li>
+									</ul>
+								</div>
+
+								<div id="content-moderation" class="hidden">
+									<h3 class="font-bold mb-2">Moderation Commands:</h3>
+									<ul class="list-disc list-inside">
+										<li><strong>kick:</strong> kick the mentioned user from the server.</li>
+										<li><strong>ban:</strong> ban the mentioned user from the server.</li>
+										<li><strong>unban:</strong> unban the mentioned user from the server.</li>
+										<li><strong>clear:</strong> clear 'x' amount of messages above you in the given channel.</li>
+									</ul>
+								</div>
+
+								<div id="content-profiles" class="hidden">
+									<h3 class="font-bold mb-2">Profile Commands:</h3>
+									<ul class="list-disc list-inside">
+										<li><strong>profile:</strong> view your profile (or the mentioned user's profile).</li>
+										<li><strong>editprofile:</strong> edit sections of your profile.</li>
+										<li><strong>createprofile:</strong> create your profile.</li>
+									</ul>
+								</div>
+
+								<div id="content-quotes" class="hidden">
+									<h3 class="font-bold mb-2">Quote Commands:</h3>
+									<ul class="list-disc list-inside">
+										<li><strong>quote:</strong> attach an image and mention a user to add the image to the user's quotes profile.</li>
+										<li><strong>quotes:</strong> view your quotes (or the mentioned user's quotes).</li>
+										<li><strong>delquote:</strong> delete a quote from a user's profile.</li>
+									</ul>
+								</div>
+
+								<div id="content-actions" class="hidden">
+									<h3 class="font-bold mb-2">Action Commands:</h3>
+									<ul class="list-disc list-inside">
+										<li><strong>hug:</strong> send a virtual hug to the mentioned user.</li>
+										<li><strong>slap:</strong> send a virtual slap to the mentioned user.</li>
+									</ul>
+								</div>
+
+								<div id="content-misc" class="hidden">
+									<h3 class="font-bold mb-2">Misc Commands:</h3>
+									<ul class="list-disc list-inside">
+										<li><strong>birthdays/bdays:</strong> view a list of all the server birthdays.</li>
+										<li><strong>zodiacs:</strong> get a list of zodiac signs and their corresponding date ranges.</li>
+										<li><strong>avatar/pfp:</strong> view your Discord avatar (or the mentioned user's avatar).</li>
+										<li><strong>id:</strong> view your Discord account ID (or the mentioned user's ID).</li>
+										<li><strong>fix:</strong> someone send a broken image? Use this to try and fix it.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			function handleTabButtonClick(categoryId) {
+				document.querySelectorAll("#content-container > div").forEach((content) => {
+					content.classList.add("hidden");
+				});
+
+				document.querySelector(`#content-${categoryId}`).classList.remove("hidden");
+			}
+
+			document.querySelectorAll("#tab-buttons > button").forEach((button) => {
+				button.addEventListener("click", () => {
+					handleTabButtonClick(button.id);
+				});
+			});
+		</script>
+	</body>
+
+	<footer>
+		<!-- COPYRIGHT FOOTER -->
+		<div class="flex flex-col items-center justify-center w-full h-32">
+			<p class="text-sm font-Inter text-gray-500">© 2023 Tyler Moss</p>
+		</div>
+	</footer>
+</html>

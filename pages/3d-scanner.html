@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>3D Scanning Device - Tyler Moss</title>
+		<link rel="stylesheet" href="../output.css" />
+		<link rel="stylesheet" href="fonts.css" />
+		<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJj9XpWUvv7pVI+Bp4CJOn4u+lfJ4w4SvIbGg2XI1TGf9XB" crossorigin="anonymous" />
+		<meta charset="utf-8" />
+		<script src="https://kit.fontawesome.com/06dbaf145a.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body class="font-Inter">
+		<!-- ONE COLUMN -->
+		<div class="mx-auto max-w-screen-xl px-5 sm:px-24">
+			<div class="grid grid-cols-1 pt-24 pb-5">
+				<!-- HEADER -->
+				<div>
+					<!-- BACK BUTTON -->
+					<div class="flex flex-row mb-7">
+						<a href="../index.html">
+							<img class="w-6" src="../assets/arrow.png" alt="back arrow" draggable="false" />
+						</a>
+					</div>
+
+					<div>
+						<!-- BANNER -->
+						<img class="mb-7 rounded-lg" draggable="false" src="../assets/projects/3d-scanner/3d-scanner-banner.jpeg" alt="3d-scanner-banner" />
+						<!-- PROJECT NAME AND DATE -->
+						<div class="flex flex-col md:flex-row justify-between md:items-end pl-2 pb-1">
+							<h2 class="text-3xl font-Inter font-bold text-left">3D Scanning Device</h2>
+							<p class="text-lg font-Inter font-normal sm:text-base lg:text-lg">January 2021 to April 2021</p>
+						</div>
+
+						<!-- SKILLS ROW -->
+						<div class="flex flex-row flex-wrap pt-2 pb-2">
+							<!-- PYTHON CAPSULE -->
+							<div class="flex items-center rounded-full bg-transparent border border-solid border-gray-300 p-2 mr-1 mb-1 h-9">
+								<i class="fab fa-python text-yellow-400 ml-1 mr-2"></i>
+								<span class="font-Inter font-medium text-gray-800 mr-1 text-sm">Python</span>
+							</div>
+							<!-- EMBEDDED SYSTEMS CAPSULE -->
+							<div class="flex items-center rounded-full bg-transparent border border-solid border-gray-300 p-2 mr-1 mb-1 h-9">
+								<i class="fas fa-cogs text-green-500 ml-1 mr-2"></i>
+								<span class="font-Inter font-medium text-gray-800 mr-1 text-sm">Embedded Systems</span>
+							</div>
+							<!-- MICROCONTROLLERS CAPSULE -->
+							<div class="flex items-center rounded-full bg-transparent border border-solid border-gray-300 p-2 mr-1 mb-1 h-9">
+								<i class="fas fa-microchip text-blue-500 ml-1 mr-2"></i>
+								<span class="font-Inter font-medium text-gray-800 mr-1 text-sm">Microcontrollers</span>
+							</div>
+							<!-- I2C & UART CAPSULE -->
+							<div class="flex items-center rounded-full bg-transparent border border-solid border-gray-300 p-2 mr-1 mb-1 h-9">
+								<i class="fas fa-exchange-alt text-purple-500 ml-1 mr-2"></i>
+								<span class="font-Inter font-medium text-gray-800 mr-1 text-sm">I2C & UART</span>
+							</div>
+							<!-- MATPLOTLIB CAPSULE -->
+							<div class="flex items-center rounded-full bg-transparent border border-solid border-gray-300 p-2 mr-1 mb-1 h-9">
+								<i class="fas fa-chart-line text-red-500 ml-1 mr-2"></i>
+								<span class="font-Inter font-medium text-gray-800 mr-1 text-sm">MatPlotLib</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- CONTENT -->
+				<div class="mt-4">
+					<!-- Text content with an image on the right, text wraps around image -->
+					<div class="flex flex-col md:flex-row mb-3">
+						<div class="w-full lg:w-3/5">
+							<h3 class="text-2xl font-Inter font-semibold">Overview & Scope</h3>
+							<!-- divider line -->
+							<div class="w-12 h-1 bg-gray-800 mt-2"></div>
+							<div class="pt-2">
+								<p class="text-lg font-Inter font-normal text-gray-800">This is a microcontroller based device which scans it’s surroundings within the yz plane. The device uses a Time-of-Flight sensor to gather data points, serial communication to send/receive information, and Python to create a 3D visualization of the data that was gathered.</p>
+								<ul class="text-lg font-Inter font-normal text-gray-800 pt-2 pb-2 list-disc list-inside">
+									<li>MSP432E401Y microcontroller</li>
+									<li>VL53L1X Time-of-Flight sensor</li>
+									<li>ULN2003A-PCB stepper motor driver and stepper motor</li>
+									<li>LED indicators to display device state</li>
+									<li>External stop/start pushbutton</li>
+									<li>Built-in sensor mount</li>
+								</ul>
+								<p class="text-lg font-Inter font-normal text-gray-800">This project is part of the "Software Engineering" (SFWRENG 3K04) course taught by Dr. Alan Wassyng at McMaster University.</p>
+							</div>
+						</div>
+						<div class="w-full lg:w-2/5 lg:ml-12 mb-4 lg:mb-0">
+							<img class="rounded-lg" draggable="false" src="../assets/projects/3d-scanner/full.png" alt="Full Image of 3D Scanner" />
+						</div>
+					</div>
+
+					<!-- General Process -->
+					<!-- Text content with an image on the right, text wraps around image -->
+					<div class="flex flex-col lg:flex-row mb-8">
+						<div class="w-full lg:w-3/5">
+							<h3 class="text-2xl font-Inter font-semibold">General Process</h3>
+							<!-- divider line -->
+							<div class="w-12 h-1 bg-gray-800 mt-2"></div>
+							<p class="text-lg font-Inter font-normal text-gray-800 pt-2">
+								The process starts with microcontroller and Python script initialization. Once these are initialized, the device must be physically placed where the scanning is desired to take place. Through the press of a pushbutton, the stepper motor will start spinning. A data point will be taken by the Time-of-Flight sensor every 5.625 degrees for a total of 64 data points per scanning rotation. These data points are then processed within the Python script and are displayed as an interactive
+								3d visualization.
+							</p>
+						</div>
+						<div class="w-full mt-4 lg:w-2/5 lg:ml-12 mb-4 lg:mb-0">
+							<div class="flex justify-center lg:justify-start">
+								<img class="rounded-lg shadow-lg mx-auto lg:mx-0" draggable="false" src="../assets/projects/3d-scanner/chart.png" alt="3D Scanner Flow Chart" />
+							</div>
+						</div>
+					</div>
+
+					<!-- PROJECT GOALS -->
+					<div class="flex flex-col mt-2 mb-8">
+						<h3 class="text-2xl font-Inter font-semibold">Gathering The Data</h3>
+						<!-- divider line -->
+						<div class="w-12 h-1 bg-gray-800 mt-2 mb-4"></div>
+						<p class="text-lg font-Inter font-normal text-gray-800 pt-2">
+							The <strong>VL53L1X Time-of-Flight sensor</strong> handles the transducer, precondition circuit, and ADC processes within itself. The sensor is accurate up to 4m and has a fast ranging frequency up to 50Hz. To measure distance, the sensor uses a 940nm invisible laser emitter with physical infrared filters and optics in order to achieve precise time of flight measurements for various ranges. To detect the returning IR laser, a single photon avalanche diode detection array is used. ‍
+							Once a time of flight measurement has been taken, the <strong>data is communicated through I2C communications</strong> using SDA and SCL signals, both of which have unique addresses, and both of which are included within a leader-follower relationship. The leader initiates a data transfer of 8-bit packets (followed by an acknowledgment bit). This is done at a speed of 100kbits/sec. The serial data is sampled upon the rising edge of the serial clock. Once the data is transmitted to
+							the microcontroller using I2C, <strong>the microcontroller sends the data to the PC through UART communications</strong>. The data being sent from the microcontroller to the PC is being read in real time by the Python script.
+						</p>
+					</div>
+
+					<!-- PROJECT GOALS -->
+					<div class="flex flex-col mt-2 mb-8">
+						<h3 class="text-2xl font-Inter font-semibold">Data Processing</h3>
+						<!-- divider line -->
+						<div class="w-12 h-1 bg-gray-800 mt-2"></div>
+						<p class="text-lg font-Inter font-normal text-gray-800 pt-2">To process the data points that are taken by the device, we must <strong>convert cylindrical coordinates to cartesian xyz-coordinates</strong>. We can do so by using the following formulas:</p>
+						<div class="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full mt-6">
+							<!-- LEFT COLUMN -->
+							<div class="col-span-1">
+								<div class="text-center">
+									<!-- prettier-ignore -->
+									<span class="katex">
+										<span class="katex-mathml"
+											><math xmlns="http://www.w3.org/1998/Math/MathML"
+												><semantics
+													><mrow><mi>y</mi><mo>=</mo><mi>distance</mi><mo>⋅</mo><mi>cos</mi><mo>(</mo><mi>angle</mi><mo>⋅</mo><mo>(</mo><mi>π</mi><mo>/</mo><mn>180</mn><mo>)</mo><mo>)</mo></mrow
+													><annotation encoding="application/x-tex">y = distance \cdot cos(angle \cdot (\pi/180))</annotation></semantics
+												></math
+											></span
+										>
+									</span>
+								</div>
+							</div>
+							<!-- RIGHT COLUMN -->
+							<div class="col-span-1">
+								<div class="text-center">
+									<span class="katex">
+										<span class="katex-mathml"
+											><math xmlns="http://www.w3.org/1998/Math/MathML"
+												><semantics
+													><mrow><mi>z</mi><mo>=</mo><mi>distance</mi><mo>⋅</mo><mi>sin</mi><mo>(</mo><mi>angle</mi><mo>⋅</mo><mo>(</mo><mi>π</mi><mo>/</mo><mn>180</mn><mo>)</mo><mo>)</mo></mrow
+													><annotation encoding="application/x-tex">z = distance \cdot sin(angle \cdot (\pi/180))</annotation></semantics
+												></math
+											></span
+										>
+									</span>
+								</div>
+							</div>
+						</div>
+
+						<p class="text-lg font-Inter font-normal text-gray-800 pt-6">
+							A conversion of x-axis data points is not needed as it is hard-coded into the Python script. The list of x-coordinates assumes 64 data points within each position of 0mm to 900mm, incrementing by 100mm each time (eg. 64 data points at 0mm, 64 data points at 100m, 64 data points at 200mm, and so on).<br />
+							To plot the data points, the Python library “Matplotlib” version 3.4.1 was used. <strong>A simple scatter plot can be formed</strong> by passing in the x, y, and z lists that hold the coordinates into the scatter() function. The resulting graph can be shown by calling the show() function.
+						</p>
+					</div>
+
+					<!-- PROJECT GOALS -->
+					<div class="flex flex-col mt-2 mb-8">
+						<h3 class="text-2xl font-Inter font-semibold">Demonstration</h3>
+						<!-- divider line -->
+						<div class="w-12 h-1 bg-gray-800 mt-2 mb-4"></div>
+						<p class="text-lg font-Inter font-normal text-gray-800 pt-2">The following pictures show a 3D representation of an area that will be scanned, as well as the result given after the device's operations were completed.</p>
+						<!-- GRID -->
+						<div class="grid grid-cols-2 gap-12 w-full mt-6">
+							<!-- LEFT COLUMN -->
+							<div class="col-span-1">
+								<div>
+									<img class="rounded-lg shadow-lg" draggable="false" src="../assets/projects/3d-scanner/614f6c710a89230184b7569b_representation-p-500.png" alt="3D Scanning Representation" />
+								</div>
+								<!-- ROW 2 -->
+							</div>
+							<!-- RIGHT COLUMN -->
+							<div class="col-span-1">
+								<!-- ROW 1 -->
+								<img class="rounded-lg shadow-lg" draggable="false" src="../assets/projects/3d-scanner/614f6c8124861030a0ebca57_result-p-500.jpeg" alt="3D Scanning Result" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<footer>
+		<!-- COPYRIGHT FOOTER -->
+		<div class="flex flex-col items-center justify-center w-full h-32">
+			<p class="text-sm font-Inter text-gray-500">© 2023 Tyler Moss</p>
+		</div>
+	</footer>
+</html>
